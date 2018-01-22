@@ -1,0 +1,946 @@
+
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en">
+ <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="올라가">
+    <meta name="author" content="올라가">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>올라가 :: 테마주 실시간 추적 시스템.</title>
+	<link rel="stylesheet" href="/style.css" />
+		<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272" height="32" viewBox="0 0 272 32">
+		<defs>
+			<g id="icon-search">
+				<path class="path1" d="M28.072 24.749l-6.046-6.046c0.912-1.499 1.437-3.256 1.437-5.139 0-5.466-4.738-10.203-10.205-10.203-5.466 0-9.898 4.432-9.898 9.898 0 5.467 4.736 10.205 10.203 10.205 1.818 0 3.52-0.493 4.984-1.349l6.078 6.080c0.597 0.595 1.56 0.595 2.154 0l1.509-1.507c0.594-0.595 0.378-1.344-0.216-1.938zM6.406 13.258c0-3.784 3.067-6.853 6.851-6.853 3.786 0 7.158 3.373 7.158 7.158s-3.067 6.853-6.853 6.853-7.157-3.373-7.157-7.158z"></path>
+			</g>
+			<g id="icon-twitter">
+				<path class="path1" d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM22.246 13.224c0.006 0.13 0.010 0.261 0.010 0.392 0 3.997-3.043 8.606-8.608 8.606-1.707 0-3.299-0.499-4.637-1.36 0.237 0.029 0.478 0.042 0.722 0.042 1.418 0 2.722-0.483 3.758-1.296-1.323-0.024-2.442-0.899-2.827-2.099 0.184 0.035 0.374 0.054 0.568 0.054 0.277 0 0.544-0.037 0.797-0.106-1.382-0.278-2.427-1.501-2.427-2.966 0-0.013 0-0.026 0.002-0.037 0.408 0.226 0.875 0.362 1.37 0.378-0.81-0.542-1.344-1.467-1.344-2.518 0-0.555 0.149-1.075 0.41-1.522 1.491 1.832 3.722 3.037 6.235 3.162-0.051-0.221-0.078-0.451-0.078-0.69 0-1.67 1.355-3.026 3.026-3.026 0.87 0 1.656 0.366 2.208 0.955 0.69-0.134 1.338-0.386 1.922-0.733-0.227 0.706-0.706 1.299-1.331 1.674 0.613-0.074 1.195-0.235 1.738-0.477-0.405 0.606-0.92 1.139-1.51 1.566z"></path>
+			</g>
+			<g id="icon-facebook">
+				<path class="path1" d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM19.637 11.254h-2.309c-0.272 0-0.576 0.36-0.576 0.838v1.667h2.886v2.378h-2.886v7.138h-2.726v-7.138h-2.47v-2.376h2.47v-1.398c0-2.006 1.392-3.637 3.302-3.637h2.309v2.528z"></path>
+			</g>
+			<g id="icon-pinterest">
+				<path class="path1" d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM17.050 19.642c-0.984-0.077-1.397-0.565-2.168-1.034-0.426 2.227-0.942 4.362-2.48 5.475-0.474-3.365 0.698-5.891 1.24-8.573-0.926-1.558 0.112-4.698 2.066-3.925 2.405 0.952-2.083 5.798 0.93 6.405 3.146 0.632 4.429-5.458 2.478-7.437-2.818-2.859-8.202-0.066-7.539 4.029 0.162 1.002 1.194 1.304 0.413 2.686-1.803-0.4-2.342-1.822-2.272-3.718 0.112-3.106 2.789-5.278 5.474-5.581 3.397-0.379 6.584 1.246 7.026 4.442 0.494 3.608-1.534 7.512-5.166 7.23z"></path>
+			</g>
+			<g id="icon-linkedin">
+				<path class="path1" d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM12.24 22.366h-3.11v-10.008h3.11v10.008zM10.666 11.13c-0.982 0-1.618-0.698-1.618-1.557 0-0.88 0.654-1.555 1.658-1.555s1.618 0.675 1.637 1.555c0.002 0.861-0.634 1.557-1.677 1.557zM23.598 22.366h-3.109v-5.547c0-1.29-0.451-2.168-1.576-2.168-0.859 0-1.37 0.594-1.597 1.166-0.082 0.203-0.102 0.491-0.102 0.776v5.771h-3.112v-6.816c0-1.248-0.040-2.293-0.082-3.192h2.701l0.144 1.39h0.061c0.41-0.654 1.413-1.616 3.091-1.616 2.046 0 3.581 1.37 3.581 4.317v5.918z"></path>
+			</g>
+			<g id="icon-eye">
+				<path class="line-eye" fill="none" fill-opacity="0" stroke="#ccc" stroke-width="0.5" stroke-miterlimit="1" d="M16,6C7.163,6,0,16,0,16s7.163,10,16,10s16-10,16-10S24.837,6,16,6z M16,22c-3.313,0-6-2.688-6-6
+				c0-3.313,2.687-6,6-6c3.312,0,6,2.687,6,6C22,19.312,19.312,22,16,22z M16,12c-2.209,0-4,1.791-4,4s1.791,4,4,4s4-1.791,4-4 S18.209,12,16,12z"/>
+			</g>
+			<symbol id="icon-instagram" viewBox="0 0 1024 1024">
+				<title>instagram</title>
+				<path class="path1" d="M518.22 601.605c24.826 0 46.013-8.467 63.559-25.44 17.56-16.973 26.346-37.493 26.346-61.519 0-24.066-8.773-44.573-26.346-61.559-17.533-16.96-38.733-25.453-63.559-25.453-24.64 0-45.733 8.493-63.293 25.453-17.546 16.986-26.333 37.493-26.333 61.559 0 24.040 8.787 44.546 26.333 61.519 17.56 16.946 38.653 25.44 63.293 25.44z"></path>
+				<path class="path2" d="M670.685 341.796h-50.653c-5.613 0-10.36 1.987-14.226 5.96-3.893 3.987-5.84 8.68-5.84 14.133v47.999c0 5.613 1.947 10.373 5.84 14.24 3.867 3.893 8.613 5.827 14.226 5.827h50.653c5.613 0 10.36-1.933 14.24-5.827 3.88-3.867 5.827-8.627 5.827-14.24v-47.999c0-5.453-1.947-10.147-5.827-14.133-3.88-3.973-8.627-5.96-14.24-5.96z"></path>
+				<path class="path3" d="M657.298 519.273c0 24.453-6.2 46.973-18.613 67.652-12.44 20.666-29.293 36.986-50.626 49.039-21.346 12.013-44.626 18.026-69.826 18.026-38.226 0-70.906-13.133-98.065-39.426-27.146-26.28-40.733-58.039-40.733-95.279 0-13.186 1.947-25.893 5.827-38.093h-41.026v188.518c0 5.040 1.693 9.253 5.107 12.653 3.373 3.413 7.6 5.107 12.64 5.107h311.023c4.84 0 9.013-1.693 12.507-5.107 3.493-3.4 5.24-7.613 5.24-12.653v-188.531h-39.266c3.867 12.213 5.813 24.906 5.813 38.093z"></path>
+				<path class="path4" d="M511.967 0c-282.756 0-511.967 229.21-511.967 511.967 0 282.81 229.21 512.033 511.967 512.033 282.81 0 512.020-229.21 512.020-512.033 0.013-282.756-229.21-511.967-512.020-511.967zM741.377 681.631c0 15.72-5.627 29.186-16.893 40.439-11.253 11.267-24.72 16.88-40.439 16.88h-332.262c-15.706 0-29.186-5.613-40.439-16.88-11.24-11.253-16.88-24.72-16.88-40.439v-332.262c0-15.706 5.64-29.2 16.88-40.439 11.253-11.253 24.733-16.88 40.439-16.88h332.249c15.733 0 29.186 5.627 40.453 16.88 11.253 11.24 16.88 24.733 16.88 40.439v332.262z"></path>
+			</symbol>
+		</defs>
+	</svg>
+</head>	
+<body>
+	<div style='text-align: left;width:100%;margin-top:30px;margin-bottom:40px;'>
+		<a href='/'>
+		<strong><span style='font-size:48px;color:red;'>올라가</span></strong>
+		</a>
+	</div>
+	<div style='text-align: left;width:100%;'>
+		<ul>
+			<li><a href='/theme'>테마별로 보기</a></li>
+			<li><a href='/company'>주식별로 보기</a></li>
+			<li><a href='/daily'>날짜별 기록보기</a></li>
+		</ul>
+	</div>
+	  <!-- 애드센스 이미지 광고. 반응형 -->
+	<DIV class='ads_adsense_img' style='margin:40px 0px 40px 0px;'>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- 디스플레이광고만 -->
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-8393857339019314"
+	     data-ad-slot="7474886381"
+	     data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</DIV>
+	<!-- 애드센스 이미지 광고 끝 -->
+
+	<p>2016년 9월 30일 15시 30분 최종 갱신.  </p>
+<hr />
+<h1><a href="http://olla.ga/theme/%EA%B9%80%EB%AC%B8%EC%88%98">김문수</a> 테마 총 상승률 21.89% 로 1위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/064240">홈캐스트</a> : 18.07%</h3>
+<h4>홈캐스트 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.g-enews.com/ko-kr/view.php?ud=201609301409307889837_1">케이에스피 상한가 '껑충'…제룡전기·홈캐스트·인텍플러스·티플랙스 등 2...</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/031430">신세계인터내셔날</a> : 2.04%</h3>
+<h4>신세계인터내셔날 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.g-enews.com/ko-kr/view.php?ud=201609300927547066837_1">특징주 신세계인터내셔날, 외인매수…나흘째 오름세</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/025750">한솔홈데코</a> : 1.07%</h3>
+<h3>4위. <a href="http://olla.ga/company/001570">금양</a> : 0.55%</h3>
+<h4>금양 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930093105190">@테마 금양_외국인도 기관도 매도세를 이어오며 현재 -1.64%  4일연속 하락</a>  </li>
+</ul>
+<h3>5위. <a href="http://olla.ga/company/008600">윌비스</a> : 0.16%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B8%8C%EB%9D%BC%EC%A7%88">브라질</a> 테마 총 상승률 21.70% 로 2위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/064240">홈캐스트</a> : 18.07%</h3>
+<h4>홈캐스트 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.g-enews.com/ko-kr/view.php?ud=201609301409307889837_1">케이에스피 상한가 '껑충'…제룡전기·홈캐스트·인텍플러스·티플랙스 등 2...</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/123040">엠에스오토텍</a> : 2.81%</h3>
+<h3>3위. <a href="http://olla.ga/company/017800">현대엘리베이</a> : 0.59%</h3>
+<h3>4위. <a href="http://olla.ga/company/000480">조선내화</a> : 0.23%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%82%AC%EB%AC%BC%EC%9D%B8%ED%84%B0%EB%84%B7">사물인터넷</a> 테마 총 상승률 21.53% 로 3위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/069410">엔텔스</a> : 9.09%</h3>
+<h4>엔텔스 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930091702707">특징주 엔텔스, 급등..사물인터넷 사업 기대</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930091513654">fnRASSI 엔텔스(069410) 14.23% 상승</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930093006137">(특징주)엔텔스, 사물인터넷 시장 확대 수혜 전망에 오름세</a>  </li>
+<li><a href="http://www.viva100.com/main/view.php?key=20160930010008336">특징주  엔텔스, 사물인터넷 수혜 분석에 강세</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/048770">TPC</a> : 3.49%</h3>
+<h4>TPC 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930103704572">@테마 3D프린터 관련주테마, TPC, 스맥 중심으로 강세</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930093007145">fnRASSI TPC, 52주 신고가 경신..10.72% ↑</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/149940">모다정보통신</a> : 2.67%</h3>
+<h3>4위. <a href="http://olla.ga/company/038680">에스넷</a> : 2.64%</h3>
+<h4>에스넷 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930091515657">fnRASSI 에스넷(038680) 9.24% 상승</a>  </li>
+</ul>
+<h3>5위. <a href="http://olla.ga/company/094280">효성ITX</a> : 1.21%</h3>
+<h3>6위. <a href="http://olla.ga/company/015710">코콤</a> : 0.94%</h3>
+<h4>코콤 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930091514656">fnRASSI 코콤(015710) 전일대비 8.49% 상승</a>  </li>
+</ul>
+<h3>7위. <a href="http://olla.ga/company/073240">금호타이어</a> : 0.89%</h3>
+<h4>금호타이어 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.sangyongcha.co.kr/news/articleView.html?idxno=5199">금호타이어, “2년 뒤 IAA에 트럭·버스용 타이어 출품”</a>  </li>
+<li><a href="http://www.sporbiz.co.kr/news/articleView.html?idxno=46594">금호타이어 굿 디자인 어워드 수상</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930044803134">금호타이어, 일본에서 2개 제품이 디자인 본상 수상</a>  </li>
+<li><a href="http://honam.co.kr/read.php3?aid=1475161200504064005">일본 굿 디자인 어워드 금호타이어 본상 수상</a>  </li>
+</ul>
+<h3>8위. <a href="http://olla.ga/company/136540">윈스</a> : 0.44%</h3>
+<h3>9위. <a href="http://olla.ga/company/049080">기가레인</a> : 0.16%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%AC%B4%EC%83%81%EC%A6%9D%EC%9E%90">무상증자</a> 테마 총 상승률 18.71% 로 4위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/109610">에스와이패널</a> : 7.08%</h3>
+<h4>에스와이패널 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930144004706">fnRASSI 에스와이패널, 52주 신고가 달성..5.04% ↑</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/195990">유지인트</a> : 2.92%</h3>
+<h3>3위. <a href="http://olla.ga/company/154040">솔루에타</a> : 2.23%</h3>
+<h4>솔루에타 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930092002792">특징주 솔루에타, '실적 턴어라운드' 기대에 강세</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930094335666">특징주 솔루에타, 밸류에이션 매력에 상승세</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930085004898">솔루에타, 성장성 대비 저평가 국면-한양증권</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/122990">와이솔</a> : 1.92%</h3>
+<h3>5위. <a href="http://olla.ga/company/128820">대성산업</a> : 1.64%</h3>
+<h3>6위. <a href="http://olla.ga/company/088390">이녹스</a> : 1.08%</h3>
+<h3>7위. <a href="http://olla.ga/company/900080">에스앤씨엔진그룹</a> : 0.63%</h3>
+<h3>8위. <a href="http://olla.ga/company/143160">아이디스</a> : 0.40%</h3>
+<h3>9위. <a href="http://olla.ga/company/077500">유니퀘스트</a> : 0.31%</h3>
+<h3>10위. <a href="http://olla.ga/company/000050">경방</a> : 0.26%</h3>
+<h3>11위. <a href="http://olla.ga/company/126700">하이비젼시스템</a> : 0.24%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/IOT">IOT</a> 테마 총 상승률 18.14% 로 5위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/069410">엔텔스</a> : 9.09%</h3>
+<h4>엔텔스 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930091702707">특징주 엔텔스, 급등..사물인터넷 사업 기대</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930091513654">fnRASSI 엔텔스(069410) 14.23% 상승</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930093006137">(특징주)엔텔스, 사물인터넷 시장 확대 수혜 전망에 오름세</a>  </li>
+<li><a href="http://www.viva100.com/main/view.php?key=20160930010008336">특징주  엔텔스, 사물인터넷 수혜 분석에 강세</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/149940">모다정보통신</a> : 2.67%</h3>
+<h3>3위. <a href="http://olla.ga/company/038680">에스넷</a> : 2.64%</h3>
+<h4>에스넷 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930091515657">fnRASSI 에스넷(038680) 9.24% 상승</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/094280">효성ITX</a> : 1.21%</h3>
+<h3>5위. <a href="http://olla.ga/company/015710">코콤</a> : 0.94%</h3>
+<h4>코콤 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930091514656">fnRASSI 코콤(015710) 전일대비 8.49% 상승</a>  </li>
+</ul>
+<h3>6위. <a href="http://olla.ga/company/049480">오픈베이스</a> : 0.60%</h3>
+<h4>오픈베이스 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930092031814">특징주 오픈베이스, 삼성 77조 활용 소프트뱅크와 IoT·AI 공동투자 기대...</a>  </li>
+</ul>
+<h3>7위. <a href="http://olla.ga/company/032750">삼진</a> : 0.52%</h3>
+<h4>삼진 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.medipana.com/news/news_viewer.asp?NewsNum=189004&amp;MainKind=A&amp;NewsKind=5&amp;vCount=12&amp;vKind=1">삼진제약, 순환기계 강자…<code>플래리스</code> 독보적 경쟁력</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930142403179">MLB  페랄타 &quot;삼진 맞아요?&quot;</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930090005130">&quot;이제는 '중소형' 제약사에 주목&quot;..삼진제약, 고령화 수혜주 될 것</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930082557384">삼진제약, 전문의약품 판매 호조로 만성질환시장 지배력↑-신한</a>  </li>
+</ul>
+<h3>8위. <a href="http://olla.ga/company/012170">키스톤글로벌</a> : 0.31%</h3>
+<h3>9위. <a href="http://olla.ga/company/030200">KT</a> : 0.16%</h3>
+<h4>KT 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930113502019">단독  인터넷TV 음란물 시장 최강자는 KT</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930092927117">서울경제TV  KT, 나는 가수다·복면가왕 등 인기 방송프로그램 VR중계</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930103504474">KT, 국군의 날 군부대 공중전화 무료 제공</a>  </li>
+<li><a href="http://www.babytimes.co.kr/n_news/news/view.html?no=17758">KT, ‘평창동계올림픽 G-500’에 5G 서비스 선봬</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%A1%9C%EB%B4%87">로봇</a> 테마 총 상승률 16.13% 로 6위</h1>
+<h2>로봇 관련 뉴스</h2>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930082103317">예산되짚기 2015  아디다스 '신발로봇' 만들 때, '로봇랜드'로만 흘러들...</a>  </li>
+</ul>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/090710">디에스티로봇</a> : 11.09%</h3>
+<h4>디에스티로봇 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930093507358">fnRASSI 디에스티로봇 전일대비 8.55% 상승</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/149940">모다정보통신</a> : 2.67%</h3>
+<h3>3위. <a href="http://olla.ga/company/130960">CJ E&amp;M</a> : 0.93%</h3>
+<h4>CJ E&amp;M 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930120019804">단독  CJ E&M;, 음악부문 확 바꾼다..안석준 대표, 오늘 퇴임</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/024810">이화전기</a> : 0.58%</h3>
+<h4>이화전기 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930093604396">@테마 대북송전주테마, 선도전기, 이화전기 중심으로 강세</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930095503023">fnRASSI 이화전기 전일대비 5.39% 상승</a>  </li>
+</ul>
+<h3>5위. <a href="http://olla.ga/company/090360">로보스타</a> : 0.50%</h3>
+<h3>6위. <a href="http://olla.ga/company/006910">보성파워텍</a> : 0.36%</h3>
+<h4>보성파워텍 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.focus.kr/view.php?key=2016093000093938558">특징주 보성파워텍, 3거래일 연속 하락세…3.3% ↓</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B2%A0%ED%8A%B8%EB%82%A8">베트남</a> 테마 총 상승률 13.34% 로 7위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/072520">태양기전</a> : 8.30%</h3>
+<h3>2위. <a href="http://olla.ga/company/097520">엠씨넥스</a> : 1.55%</h3>
+<h3>3위. <a href="http://olla.ga/company/090410">덕신하우징</a> : 1.44%</h3>
+<h3>4위. <a href="http://olla.ga/company/073240">금호타이어</a> : 0.89%</h3>
+<h4>금호타이어 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.sangyongcha.co.kr/news/articleView.html?idxno=5199">금호타이어, “2년 뒤 IAA에 트럭·버스용 타이어 출품”</a>  </li>
+<li><a href="http://www.sporbiz.co.kr/news/articleView.html?idxno=46594">금호타이어 굿 디자인 어워드 수상</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930044803134">금호타이어, 일본에서 2개 제품이 디자인 본상 수상</a>  </li>
+<li><a href="http://honam.co.kr/read.php3?aid=1475161200504064005">일본 굿 디자인 어워드 금호타이어 본상 수상</a>  </li>
+</ul>
+<h3>5위. <a href="http://olla.ga/company/034020">두산중공업</a> : 0.79%</h3>
+<h4>두산중공업 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.thebell.co.kr/front/free/contents/news/article_view.asp?key=201609290100047240002801&amp;mode=I20160930083002">더벨  ㈜두산, '군포 부지' 두산중공업에 매각</a>  </li>
+</ul>
+<h3>6위. <a href="http://olla.ga/company/066980">하이쎌</a> : 0.37%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B6%84%ED%95%A0">분할</a> 테마 총 상승률 12.40% 로 8위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/040910">아이씨디</a> : 8.60%</h3>
+<h4>아이씨디 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930112007373">fnRASSI 아이씨디(040910) 현재 +5.38%</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/007980">태평양물산</a> : 1.97%</h3>
+<h4>태평양물산 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ktnews.com/sub/view.php?cd_news=100640&amp;cd_cate=">태평양물산, 최고 품질 ‘소프라움’ 인지도 제고</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/044820">코스맥스비티아이</a> : 1.83%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%95%84%EC%9D%B4%EC%9C%A0">아이유</a> 테마 총 상승률 11.58% 로 9위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/015020">이스타코</a> : 4.16%</h3>
+<h3>2위. <a href="http://olla.ga/company/058630">엠게임</a> : 3.90%</h3>
+<h4>엠게임 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930111510135">엠게임, 증강현실 게임 '캐치몬' 테스터 모집</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930130604851">엠게임, 증강현실 모바일게임 '캐치몬' 10월 테스트..참가자 모집</a>  </li>
+<li><a href="http://www.gamefocus.co.kr/detail.php?number=63743">엠게임 AR게임 사업 본격 시작, AR 모바일게임 '캐치몬' CBT 참가자 모집</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930145209114">엠게임, 모바일 AR게임 '캐치몬' CBT 참가자 모집</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/016170">로엔</a> : 2.64%</h3>
+<h4>로엔 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930111405073">@테마 로엔_거래비중 기관 36.84%, 외국인 45.2%</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/036570">엔씨소프트</a> : 0.68%</h3>
+<h4>엔씨소프트 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ceoscoredaily.com/news/article.html?no=23597">지속가능경영 우수기업 엔씨소프트, ‘게임 1세대’ 자존심 이어간다</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930110006424">fnRASSI 엔씨소프트, 52주 신고가 경신..0.17% ↑</a>  </li>
+</ul>
+<h3>5위. <a href="http://olla.ga/company/034120">SBS</a> : 0.20%</h3>
+<h4>SBS 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930120134834">단독  '강심장'·'불청' 박상혁 PD, SBS 떠난다 &quot;사표 제출&quot;</a>  </li>
+<li><a href="http://www.bizwatch.co.kr/pages/view.php?uid=26065">라임라이트, SBS에 고화질 영상서비스 제공</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930100504480">뚜아후아 주얼리, '2016 SBS 슈퍼모델선발대회' 공식 스폰서 활동</a>  </li>
+<li><a href="http://www.icbnnews.com/default/index_view_page.php?idx=60935">고령군, SBS <code>당신은 선물</code> 통해 관광명소 전국에 <code>홍보</code></a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930152509210">3분 Talk 드라마에 예능까지..SBS PD들의 거센 퇴사 바람</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%A0%84%EA%B8%B0%EC%B0%A8">전기차</a> 테마 총 상승률 10.65% 로 10위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/080530">코디에스</a> : 7.01%</h3>
+<h4>코디에스 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930095506037">fnRASSI 코디에스(080530) 전일대비 5.72% 상승</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/039290">인포뱅크</a> : 2.08%</h3>
+<h3>3위. <a href="http://olla.ga/company/073240">금호타이어</a> : 0.89%</h3>
+<h4>금호타이어 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.sangyongcha.co.kr/news/articleView.html?idxno=5199">금호타이어, “2년 뒤 IAA에 트럭·버스용 타이어 출품”</a>  </li>
+<li><a href="http://www.sporbiz.co.kr/news/articleView.html?idxno=46594">금호타이어 굿 디자인 어워드 수상</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930044803134">금호타이어, 일본에서 2개 제품이 디자인 본상 수상</a>  </li>
+<li><a href="http://honam.co.kr/read.php3?aid=1475161200504064005">일본 굿 디자인 어워드 금호타이어 본상 수상</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/012340">뉴인텍</a> : 0.36%</h3>
+<h3>5위. <a href="http://olla.ga/company/068400">AJ렌터카</a> : 0.31%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%95%A0%ED%94%8C">애플</a> 테마 총 상승률 10.28% 로 11위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/051370">인터플렉스</a> : 6.81%</h3>
+<h4>인터플렉스 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.thebell.co.kr/front/free/contents/news/article_view.asp?key=201609280100044030002615&amp;mode=I20160930083002">더벨  '가동률 낮은' 인터플렉스, 설비투자 이유는</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930112004360">fnRASSI 인터플렉스(051370) 현재 5.18% ↑</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930125803697">@테마 인터플렉스_위험대비 수익률 0.4로 상위권, 업종평균대비 성과 좋...</a>  </li>
+<li><a href="http://www.etoday.co.kr/news/section/newsview.php?idxno=1390952">신한금융투자 추천종목  인터플렉스ㆍ제이에스코퍼레이션ㆍ뉴트리바이오텍</a>  </li>
+<li><a href="http://www.seoulfn.com/news/articleView.html?idxno=262531">신한금투: 인터플렉스·SK하이닉스·한국콜마 외</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/137940">넥스트아이</a> : 2.16%</h3>
+<h4>넥스트아이 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930144530899">특징주 넥스트아이, 화장품 사업 기대에 한달간 50% 상승</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/101060">SBS미디어홀딩스</a> : 0.52%</h3>
+<h3>4위. <a href="http://olla.ga/company/066980">하이쎌</a> : 0.37%</h3>
+<h3>5위. <a href="http://olla.ga/company/012170">키스톤글로벌</a> : 0.31%</h3>
+<h3>6위. <a href="http://olla.ga/company/041020">인프라웨어</a> : 0.11%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%9D%B8%EB%8F%84">인도</a> 테마 총 상승률 9.98% 로 12위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/123040">엠에스오토텍</a> : 2.81%</h3>
+<h3>2위. <a href="http://olla.ga/company/010140">삼성중공업</a> : 2.17%</h3>
+<h4>삼성중공업 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930151602942">삼성중공업, 올해 첫 선박 주문 받아</a>  </li>
+<li><a href="http://news2.cnbnews.com/news/article.html?no=334691">삼성중공업, LNG선 2척 '수주'…수주 목표 달성률 7.2%</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930104917010">삼성중공업, 올해 첫 수주..계약금 4천200억</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930114004193">대한해운, 삼성중공업에 669억 규모 신조선박 투자 결정</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/007980">태평양물산</a> : 1.97%</h3>
+<h4>태평양물산 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ktnews.com/sub/view.php?cd_news=100640&amp;cd_cate=">태평양물산, 최고 품질 ‘소프라움’ 인지도 제고</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/030350">드래곤플라이</a> : 1.12%</h3>
+<h3>5위. <a href="http://olla.ga/company/000230">일동제약</a> : 1.12%</h3>
+<h4>일동제약 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930053023390">'양도세 부담' 벗어난 일동제약 오너가..지주사 유증 임박</a>  </li>
+</ul>
+<h3>6위. <a href="http://olla.ga/company/034020">두산중공업</a> : 0.79%</h3>
+<h4>두산중공업 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.thebell.co.kr/front/free/contents/news/article_view.asp?key=201609290100047240002801&amp;mode=I20160930083002">더벨  ㈜두산, '군포 부지' 두산중공업에 매각</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%9D%B4%EB%9E%80">이란</a> 테마 총 상승률 8.60% 로 13위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/040910">아이씨디</a> : 8.60%</h3>
+<h4>아이씨디 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930112007373">fnRASSI 아이씨디(040910) 현재 +5.38%</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EA%B2%8C%EC%9E%84">게임</a> 테마 총 상승률 7.20% 로 14위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/058630">엠게임</a> : 3.90%</h3>
+<h4>엠게임 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930111510135">엠게임, 증강현실 게임 '캐치몬' 테스터 모집</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930130604851">엠게임, 증강현실 모바일게임 '캐치몬' 10월 테스트..참가자 모집</a>  </li>
+<li><a href="http://www.gamefocus.co.kr/detail.php?number=63743">엠게임 AR게임 사업 본격 시작, AR 모바일게임 '캐치몬' CBT 참가자 모집</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930145209114">엠게임, 모바일 AR게임 '캐치몬' CBT 참가자 모집</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/123420">선데이토즈</a> : 1.58%</h3>
+<h4>선데이토즈 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930151349860">선데이토즈 '애니팡3', 국내 3대 마켓 인기 1위 기록</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930121005987">선데이토즈 '애니팡3', 국내 앱마켓 인기 1위 기록</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930114838492">선데이토즈 '애니팡3' 출시 초반 쾌속 순항</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930102505127">이베스트증권 &quot;선데이토즈, 애니팡3 흥행 조짐, 주가 청신호&quot;</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930072345475">이베스트증권 &quot;선데이토즈, 애니팡3도 흥행 조짐&quot;</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/130960">CJ E&amp;M</a> : 0.93%</h3>
+<h4>CJ E&amp;M 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930120019804">단독  CJ E&M;, 음악부문 확 바꾼다..안석준 대표, 오늘 퇴임</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/036570">엔씨소프트</a> : 0.68%</h3>
+<h4>엔씨소프트 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ceoscoredaily.com/news/article.html?no=23597">지속가능경영 우수기업 엔씨소프트, ‘게임 1세대’ 자존심 이어간다</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930110006424">fnRASSI 엔씨소프트, 52주 신고가 경신..0.17% ↑</a>  </li>
+</ul>
+<h3>5위. <a href="http://olla.ga/company/041020">인프라웨어</a> : 0.11%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%ED%95%A9%EB%B3%91">합병</a> 테마 총 상승률 6.95% 로 15위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/016170">로엔</a> : 2.64%</h3>
+<h4>로엔 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930111405073">@테마 로엔_거래비중 기관 36.84%, 외국인 45.2%</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/010140">삼성중공업</a> : 2.17%</h3>
+<h4>삼성중공업 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930151602942">삼성중공업, 올해 첫 선박 주문 받아</a>  </li>
+<li><a href="http://news2.cnbnews.com/news/article.html?no=334691">삼성중공업, LNG선 2척 '수주'…수주 목표 달성률 7.2%</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930104917010">삼성중공업, 올해 첫 수주..계약금 4천200억</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930114004193">대한해운, 삼성중공업에 669억 규모 신조선박 투자 결정</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/033050">제이엠아이</a> : 1.65%</h3>
+<h3>4위. <a href="http://olla.ga/company/043610">KT뮤직</a> : 0.49%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%A4%91%EA%B5%AD">중국</a> 테마 총 상승률 6.42% 로 16위</h1>
+<h2>중국 관련 뉴스</h2>
+<ul>
+<li><a href="http://www.schoolitv.com/article.php?aid=147521121526890001">미래부, 가상현실 디지털 테마파크... 중국시장 개척</a>  </li>
+</ul>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/122990">와이솔</a> : 1.92%</h3>
+<h3>2위. <a href="http://olla.ga/company/084870">베이직하우스</a> : 1.26%</h3>
+<h3>3위. <a href="http://olla.ga/company/115390">락앤락</a> : 0.81%</h3>
+<h4>락앤락 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930082210331">락앤락, '락앤락 핫보틀 세트' CJ홈표핑 통해 첫 선</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/052260">바이오랜드</a> : 0.71%</h3>
+<h3>5위. <a href="http://olla.ga/company/002350">넥센타이어</a> : 0.68%</h3>
+<h4>넥센타이어 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.sporbiz.co.kr/news/articleView.html?idxno=46619">넥센타이어 우수한 디자인으로 'G마크' 획득</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930090602359">&quot;넥센타이어, 우려보다 낮은 원자재가격 상승으로 3분기 실적 양호할 전...</a>  </li>
+</ul>
+<h3>6위. <a href="http://olla.ga/company/036570">엔씨소프트</a> : 0.68%</h3>
+<h4>엔씨소프트 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ceoscoredaily.com/news/article.html?no=23597">지속가능경영 우수기업 엔씨소프트, ‘게임 1세대’ 자존심 이어간다</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930110006424">fnRASSI 엔씨소프트, 52주 신고가 경신..0.17% ↑</a>  </li>
+</ul>
+<h3>7위. <a href="http://olla.ga/company/001800">오리온</a> : 0.36%</h3>
+<h4>오리온 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.pressm.kr/news/articleView.html?idxno=10067">오리온, 농협과 손잡고 '쌀 과자' 개발</a>  </li>
+<li><a href="http://www.nongmin.com/article/ar_detail.htm?ar_id=268469">오리온-농협 손잡고 ‘쌀과자’ 개발한다</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B0%B0%EB%8B%B9">배당</a> 테마 총 상승률 6.18% 로 17위</h1>
+<h2>배당 관련 뉴스</h2>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930093302255">스탁시티 추천주 '승일', 정치 테마·고배당주로 상승세</a>  </li>
+</ul>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/122990">와이솔</a> : 1.92%</h3>
+<h3>2위. <a href="http://olla.ga/company/112240">에스에프씨</a> : 1.38%</h3>
+<h3>3위. <a href="http://olla.ga/company/010950">S-Oil</a> : 1.24%</h3>
+<h3>4위. <a href="http://olla.ga/company/034020">두산중공업</a> : 0.79%</h3>
+<h4>두산중공업 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.thebell.co.kr/front/free/contents/news/article_view.asp?key=201609290100047240002801&amp;mode=I20160930083002">더벨  ㈜두산, '군포 부지' 두산중공업에 매각</a>  </li>
+</ul>
+<h3>5위. <a href="http://olla.ga/company/024070">WISCOM</a> : 0.34%</h3>
+<h3>6위. <a href="http://olla.ga/company/029530">신도리코</a> : 0.20%</h3>
+<h3>7위. <a href="http://olla.ga/company/030200">KT</a> : 0.16%</h3>
+<h4>KT 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930113502019">단독  인터넷TV 음란물 시장 최강자는 KT</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930092927117">서울경제TV  KT, 나는 가수다·복면가왕 등 인기 방송프로그램 VR중계</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930103504474">KT, 국군의 날 군부대 공중전화 무료 제공</a>  </li>
+<li><a href="http://www.babytimes.co.kr/n_news/news/view.html?no=17758">KT, ‘평창동계올림픽 G-500’에 5G 서비스 선봬</a>  </li>
+</ul>
+<h3>8위. <a href="http://olla.ga/company/001560">제일연마</a> : 0.15%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%9A%94%EC%9A%B0%EC%BB%A4">요우커</a> 테마 총 상승률 5.89% 로 18위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/123690">한국화장품</a> : 4.26%</h3>
+<h4>한국화장품 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930060124679">&quot;국경절 특수 노려라&quot; 코트라, 中서 한국화장품 판촉전</a>  </li>
+<li><a href="http://www.thebk.co.kr/news/articleView.html?idxno=181792">2 한국화장품 위기...Me Too 제품 범람, R&D; 경쟁력 저하</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930143004390">fnRASSI 한국화장품제조 전일대비 7.08% 상승</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/027050">코리아나</a> : 1.26%</h3>
+<h3>3위. <a href="http://olla.ga/company/066980">하이쎌</a> : 0.37%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/3D%ED%94%84%EB%A6%B0%ED%84%B0">3D프린터</a> 테마 총 상승률 5.56% 로 19위</h1>
+<h2>3D프린터 관련 뉴스</h2>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930103704572">@테마 3D프린터 관련주테마, TPC, 스맥 중심으로 강세</a>  </li>
+</ul>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/048770">TPC</a> : 3.49%</h3>
+<h4>TPC 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930103704572">@테마 3D프린터 관련주테마, TPC, 스맥 중심으로 강세</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930093007145">fnRASSI TPC, 52주 신고가 경신..10.72% ↑</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/035620">바른손이앤에이</a> : 1.72%</h3>
+<h3>3위. <a href="http://olla.ga/company/126700">하이비젼시스템</a> : 0.24%</h3>
+<h3>4위. <a href="http://olla.ga/company/066310">큐에스아이</a> : 0.11%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0">빅데이터</a> 테마 총 상승률 4.83% 로 20위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/032500">케이엠더블유</a> : 1.69%</h3>
+<h3>2위. <a href="http://olla.ga/company/033240">자화전자</a> : 1.39%</h3>
+<h3>3위. <a href="http://olla.ga/company/049480">오픈베이스</a> : 0.60%</h3>
+<h4>오픈베이스 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930092031814">특징주 오픈베이스, 삼성 77조 활용 소프트뱅크와 IoT·AI 공동투자 기대...</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/136540">윈스</a> : 0.44%</h3>
+<h3>5위. <a href="http://olla.ga/company/012170">키스톤글로벌</a> : 0.31%</h3>
+<h3>6위. <a href="http://olla.ga/company/034730">SK</a> : 0.24%</h3>
+<h4>SK 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930103459463">최태원 날개 달고 난 SK호크스</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930082856431">SK브로드밴드 기사 전봇대 작업 중 추락사..경찰 수사</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930095019878">LG 4위 확정 마지막 고비, SK 2연전 넘어라</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930145332159">'음주운전' 테임즈, 홈런왕 타이틀 향방..SK 최정?</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930152005040">SK텔레콤, 갤럭시A8 단독 예약가입..10월 1~4일</a>  </li>
+</ul>
+<h3>7위. <a href="http://olla.ga/company/030200">KT</a> : 0.16%</h3>
+<h4>KT 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930113502019">단독  인터넷TV 음란물 시장 최강자는 KT</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930092927117">서울경제TV  KT, 나는 가수다·복면가왕 등 인기 방송프로그램 VR중계</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930103504474">KT, 국군의 날 군부대 공중전화 무료 제공</a>  </li>
+<li><a href="http://www.babytimes.co.kr/n_news/news/view.html?no=17758">KT, ‘평창동계올림픽 G-500’에 5G 서비스 선봬</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%A9%B4%EC%84%B8%EC%A0%90">면세점</a> 테마 총 상승률 4.81% 로 21위</h1>
+<h2>면세점 관련 뉴스</h2>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930120010793">비하인드스토리  탈환vs.확장..면세점 3차대전 승자는?</a>  </li>
+</ul>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/123690">한국화장품</a> : 4.26%</h3>
+<h4>한국화장품 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930060124679">&quot;국경절 특수 노려라&quot; 코트라, 中서 한국화장품 판촉전</a>  </li>
+<li><a href="http://www.thebk.co.kr/news/articleView.html?idxno=181792">2 한국화장품 위기...Me Too 제품 범람, R&D; 경쟁력 저하</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930143004390">fnRASSI 한국화장품제조 전일대비 7.08% 상승</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/006370">대구백화점</a> : 0.38%</h3>
+<h4>대구백화점 관련 뉴스</h4>
+<ul>
+<li><a href="http://news.bbsi.co.kr/news/articleView.html?idxno=778009">대구백화점, ‘빅3’에 맞불 6년만에 사장 중심 경영체제 돌입</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930105804358">대구백화점 전열 정비..현대백화점 출신 최관웅 사장 영입</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930112629658">대구백화점 최관웅 신임 사장 취임</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930134503770">최관웅 대구백화점 사장 취임</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/001680">대상</a> : 0.17%</h3>
+<h4>대상 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.foodtoday.or.kr/news/article.html?no=143322">대상그룹, 사업구조 개편...'만년적자' 베스트코 흑자 탈바꿈할까</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930151805991">&quot;네이버·카카오도 김영란법 대상으로&quot; 개정안 추진</a>  </li>
+<li><a href="http://www.thebell.co.kr/front/free/contents/news/article_view.asp?key=201609290100046540002757&amp;mode=I20160930083002">더벨  대상그룹, 대상베스트코에 힘싣는다</a>  </li>
+<li><a href="http://www.ktnews.com/sub/view.php?cd_news=100675&amp;cd_cate=B011">김영란법 시행…적용대상 ‘섬유패션 기관’ 10곳 미만</a>  </li>
+<li><a href="http://www.dailyjn.com/news/articleView.html?idxno=39200">강진군, 연이은‘SNS 대상’수상</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%95%88%EC%B2%A0%EC%88%98">안철수</a> 테마 총 상승률 4.72% 로 22위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/006980">우성사료</a> : 2.69%</h3>
+<h3>2위. <a href="http://olla.ga/company/019490">하이트론</a> : 1.43%</h3>
+<h3>3위. <a href="http://olla.ga/company/049480">오픈베이스</a> : 0.60%</h3>
+<h4>오픈베이스 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930092031814">특징주 오픈베이스, 삼성 77조 활용 소프트뱅크와 IoT·AI 공동투자 기대...</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%ED%99%A9%EC%82%AC">황사</a> 테마 총 상승률 4.25% 로 23위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/065160">에프티이앤이</a> : 2.81%</h3>
+<h4>에프티이앤이 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930112006368">fnRASSI 에프티이앤이(065160) 5.17% 상승</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/009240">한샘</a> : 1.44%</h3>
+<h4>한샘 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930134344696">한샘 업계 최초 '토탈 리모델링 패키지' 온라인 출시</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930095504029">한샘, 업계 최초 리모델링상품 온라인 판매 시작</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930094418680">한샘, '코리아세일페스타' 맞아 침대·매트리스 17종 할인</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930132502240">(주)한샘, 홀트아동복지회에 장애인 특수장비버스 기부</a>  </li>
+<li><a href="http://www.joongboo.com/?mod=news&amp;act=articleView&amp;idxno=1108486">한샘, 침대·매트리스 가격 인하</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%82%BC%EC%84%B1%ED%8E%98%EC%9D%B4">삼성페이</a> 테마 총 상승률 4.15% 로 24위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/038680">에스넷</a> : 2.64%</h3>
+<h4>에스넷 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930091515657">fnRASSI 에스넷(038680) 9.24% 상승</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/035600">KG이니시스</a> : 1.51%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%97%94%ED%99%94%EC%95%BD%EC%84%B8">엔화약세</a> 테마 총 상승률 3.89% 로 25위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/016170">로엔</a> : 2.64%</h3>
+<h4>로엔 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930111405073">@테마 로엔_거래비중 기관 36.84%, 외국인 45.2%</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/053450">세코닉스</a> : 0.63%</h3>
+<h3>3위. <a href="http://olla.ga/company/009830">한화케미칼</a> : 0.62%</h3>
+<h4>한화케미칼 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930075202762">&quot;한화케미칼, 태양광사업 우려 과도..3분기 실적 개선될 것&quot;-현대</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%9D%BC%EB%B3%B8">일본</a> 테마 총 상승률 3.75% 로 26위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/123420">선데이토즈</a> : 1.58%</h3>
+<h4>선데이토즈 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930151349860">선데이토즈 '애니팡3', 국내 3대 마켓 인기 1위 기록</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930121005987">선데이토즈 '애니팡3', 국내 앱마켓 인기 1위 기록</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930114838492">선데이토즈 '애니팡3' 출시 초반 쾌속 순항</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930102505127">이베스트증권 &quot;선데이토즈, 애니팡3 흥행 조짐, 주가 청신호&quot;</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930072345475">이베스트증권 &quot;선데이토즈, 애니팡3도 흥행 조짐&quot;</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/007390">네이처셀</a> : 1.05%</h3>
+<h4>네이처셀 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ekn.kr/news/article.html?no=240818">네이처셀, 줄기세포 화장품 중국 시장 공략 개시</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/002350">넥센타이어</a> : 0.68%</h3>
+<h4>넥센타이어 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.sporbiz.co.kr/news/articleView.html?idxno=46619">넥센타이어 우수한 디자인으로 'G마크' 획득</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930090602359">&quot;넥센타이어, 우려보다 낮은 원자재가격 상승으로 3분기 실적 양호할 전...</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/136540">윈스</a> : 0.44%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B0%95%EA%B7%BC%ED%98%9C">박근혜</a> 테마 총 상승률 3.73% 로 27위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/900130">웨이포트</a> : 1.95%</h3>
+<h4>웨이포트 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930103507489">fnRASSI 웨이포트(900130) 현재 6.25% ↑</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/078930">GS</a> : 0.75%</h3>
+<h4>GS 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930122238120">프로배구  '멀티포지션' 강조한 GS칼텍스, 중심에 선 황민경</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930151804989">GS Caltex breaks ground to build demo plant to produce biobutanol</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930142403183">GS25, 국군의날 맞아 '황금마차' 이벤트</a>  </li>
+<li><a href="http://www.thebell.co.kr/front/free/contents/news/article_view.asp?key=201609270100040150002391&amp;mode=I20160930083001">더벨  GS글로벌, 늘어난 GS엔텍 빚보증</a>  </li>
+<li><a href="http://www.news2day.co.kr/n_news/news/view.html?no=85164">JOB리포트  ”우리회사 벤치플레이어는?” GS건설 자소서 화제</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/006910">보성파워텍</a> : 0.36%</h3>
+<h4>보성파워텍 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.focus.kr/view.php?key=2016093000093938558">특징주 보성파워텍, 3거래일 연속 하락세…3.3% ↓</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/012170">키스톤글로벌</a> : 0.31%</h3>
+<h3>5위. <a href="http://olla.ga/company/029960">코엔텍</a> : 0.20%</h3>
+<h3>6위. <a href="http://olla.ga/company/030200">KT</a> : 0.16%</h3>
+<h4>KT 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930113502019">단독  인터넷TV 음란물 시장 최강자는 KT</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930092927117">서울경제TV  KT, 나는 가수다·복면가왕 등 인기 방송프로그램 VR중계</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930103504474">KT, 국군의 날 군부대 공중전화 무료 제공</a>  </li>
+<li><a href="http://www.babytimes.co.kr/n_news/news/view.html?no=17758">KT, ‘평창동계올림픽 G-500’에 5G 서비스 선봬</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%AC%B8%EC%9E%AC%EC%9D%B8">문재인</a> 테마 총 상승률 3.05% 로 28위</h1>
+<h2>문재인 관련 뉴스</h2>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930105704324">@테마 문재인 관련주 테마_시장에서 경계감 커져</a>  </li>
+</ul>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/006980">우성사료</a> : 2.69%</h3>
+<h3>2위. <a href="http://olla.ga/company/006910">보성파워텍</a> : 0.36%</h3>
+<h4>보성파워텍 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.focus.kr/view.php?key=2016093000093938558">특징주 보성파워텍, 3거래일 연속 하락세…3.3% ↓</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%AA%A8%EB%B0%94%EC%9D%BC">모바일</a> 테마 총 상승률 2.73% 로 29위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/030350">드래곤플라이</a> : 1.12%</h3>
+<h3>2위. <a href="http://olla.ga/company/130960">CJ E&amp;M</a> : 0.93%</h3>
+<h4>CJ E&amp;M 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930120019804">단독  CJ E&M;, 음악부문 확 바꾼다..안석준 대표, 오늘 퇴임</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/036570">엔씨소프트</a> : 0.68%</h3>
+<h4>엔씨소프트 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ceoscoredaily.com/news/article.html?no=23597">지속가능경영 우수기업 엔씨소프트, ‘게임 1세대’ 자존심 이어간다</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930110006424">fnRASSI 엔씨소프트, 52주 신고가 경신..0.17% ↑</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%9C%A0%EC%83%81%EC%A6%9D%EC%9E%90">유상증자</a> 테마 총 상승률 2.72% 로 30위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/052300">SH 홀딩스</a> : 0.95%</h3>
+<h3>2위. <a href="http://olla.ga/company/002700">신일산업</a> : 0.82%</h3>
+<h3>3위. <a href="http://olla.ga/company/017800">현대엘리베이</a> : 0.59%</h3>
+<h3>4위. <a href="http://olla.ga/company/006910">보성파워텍</a> : 0.36%</h3>
+<h4>보성파워텍 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.focus.kr/view.php?key=2016093000093938558">특징주 보성파워텍, 3거래일 연속 하락세…3.3% ↓</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B0%98%EA%B8%B0%EB%AC%B8">반기문</a> 테마 총 상승률 2.49% 로 31위</h1>
+<h2>반기문 관련 뉴스</h2>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930103605539">@테마 반기문 관련주테마, 한창, 씨씨에스 중심으로 약세</a>  </li>
+</ul>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/025750">한솔홈데코</a> : 1.07%</h3>
+<h3>2위. <a href="http://olla.ga/company/043910">자연과환경</a> : 0.86%</h3>
+<h4>자연과환경 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930093006139">특징주  자연과환경, 회계장부 열람 가처분신청 소식에 하락세</a>  </li>
+</ul>
+<h3>3위. <a href="http://olla.ga/company/006910">보성파워텍</a> : 0.36%</h3>
+<h4>보성파워텍 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.focus.kr/view.php?key=2016093000093938558">특징주 보성파워텍, 3거래일 연속 하락세…3.3% ↓</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/029960">코엔텍</a> : 0.20%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/TPP">TPP</a> 테마 총 상승률 2.13% 로 32위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/007980">태평양물산</a> : 1.97%</h3>
+<h4>태평양물산 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ktnews.com/sub/view.php?cd_news=100640&amp;cd_cate=">태평양물산, 최고 품질 ‘소프라움’ 인지도 제고</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/008600">윌비스</a> : 0.16%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B0%98%EB%8F%84%EC%B2%B4">반도체</a> 테마 총 상승률 2.09% 로 33위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/089530">에이티세미콘</a> : 1.10%</h3>
+<h3>2위. <a href="http://olla.ga/company/046890">서울반도체</a> : 0.68%</h3>
+<h3>3위. <a href="http://olla.ga/company/077500">유니퀘스트</a> : 0.31%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%B9%98%ED%82%A8">치킨</a> 테마 총 상승률 1.98% 로 34위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/036570">엔씨소프트</a> : 0.68%</h3>
+<h4>엔씨소프트 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.ceoscoredaily.com/news/article.html?no=23597">지속가능경영 우수기업 엔씨소프트, ‘게임 1세대’ 자존심 이어간다</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930110006424">fnRASSI 엔씨소프트, 52주 신고가 경신..0.17% ↑</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/043610">KT뮤직</a> : 0.49%</h3>
+<h3>3위. <a href="http://olla.ga/company/036490">OCI머티리얼즈</a> : 0.45%</h3>
+<h3>4위. <a href="http://olla.ga/company/001800">오리온</a> : 0.36%</h3>
+<h4>오리온 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.pressm.kr/news/articleView.html?idxno=10067">오리온, 농협과 손잡고 '쌀 과자' 개발</a>  </li>
+<li><a href="http://www.nongmin.com/article/ar_detail.htm?ar_id=268469">오리온-농협 손잡고 ‘쌀과자’ 개발한다</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%9D%BC%EB%A9%B4">라면</a> 테마 총 상승률 1.75% 로 35위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/123420">선데이토즈</a> : 1.58%</h3>
+<h4>선데이토즈 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930151349860">선데이토즈 '애니팡3', 국내 3대 마켓 인기 1위 기록</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930121005987">선데이토즈 '애니팡3', 국내 앱마켓 인기 1위 기록</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930114838492">선데이토즈 '애니팡3' 출시 초반 쾌속 순항</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930102505127">이베스트증권 &quot;선데이토즈, 애니팡3 흥행 조짐, 주가 청신호&quot;</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930072345475">이베스트증권 &quot;선데이토즈, 애니팡3도 흥행 조짐&quot;</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/001680">대상</a> : 0.17%</h3>
+<h4>대상 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.foodtoday.or.kr/news/article.html?no=143322">대상그룹, 사업구조 개편...'만년적자' 베스트코 흑자 탈바꿈할까</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930151805991">&quot;네이버·카카오도 김영란법 대상으로&quot; 개정안 추진</a>  </li>
+<li><a href="http://www.gukjenews.com/news/articleView.html?idxno=563503">울진소방서, 어린이집 대상 지진대비 소방안전교육 실시</a>  </li>
+<li><a href="http://www.thebell.co.kr/front/free/contents/news/article_view.asp?key=201609290100046540002757&amp;mode=I20160930083002">더벨  대상그룹, 대상베스트코에 힘싣는다</a>  </li>
+<li><a href="http://www.ktnews.com/sub/view.php?cd_news=100675&amp;cd_cate=B011">김영란법 시행…적용대상 ‘섬유패션 기관’ 10곳 미만</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EA%B9%80%EB%AC%B4%EC%84%B1">김무성</a> 테마 총 상승률 1.75% 로 36위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/049480">오픈베이스</a> : 0.60%</h3>
+<h4>오픈베이스 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930092031814">특징주 오픈베이스, 삼성 77조 활용 소프트뱅크와 IoT·AI 공동투자 기대...</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/017800">현대엘리베이</a> : 0.59%</h3>
+<h3>3위. <a href="http://olla.ga/company/006910">보성파워텍</a> : 0.36%</h3>
+<h4>보성파워텍 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.focus.kr/view.php?key=2016093000093938558">특징주 보성파워텍, 3거래일 연속 하락세…3.3% ↓</a>  </li>
+</ul>
+<h3>4위. <a href="http://olla.ga/company/029960">코엔텍</a> : 0.20%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%80%ED%96%89">인터넷은행</a> 테마 총 상승률 1.67% 로 37위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/035600">KG이니시스</a> : 1.51%</h3>
+<h3>2위. <a href="http://olla.ga/company/030200">KT</a> : 0.16%</h3>
+<h4>KT 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930113502019">단독  인터넷TV 음란물 시장 최강자는 KT</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930092927117">서울경제TV  KT, 나는 가수다·복면가왕 등 인기 방송프로그램 VR중계</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930103504474">KT, 국군의 날 군부대 공중전화 무료 제공</a>  </li>
+<li><a href="http://www.babytimes.co.kr/n_news/news/view.html?no=17758">KT, ‘평창동계올림픽 G-500’에 5G 서비스 선봬</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%ED%95%80%ED%85%8C%ED%81%AC">핀테크</a> 테마 총 상승률 1.51% 로 38위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/035600">KG이니시스</a> : 1.51%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%93%9C%EB%A1%A0">드론</a> 테마 총 상승률 0.99% 로 39위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/033320">제이씨현시스템</a> : 0.83%</h3>
+<h4>제이씨현시스템 관련 뉴스</h4>
+<ul>
+<li><a href="http://www.bodnara.co.kr/bbs/article.html?num=134949">제이씨현시스템, GIGABYTE RX480 구매 시 배틀필드1 디럭스에디션 할인권...</a>  </li>
+</ul>
+<h3>2위. <a href="http://olla.ga/company/030200">KT</a> : 0.16%</h3>
+<h4>KT 관련 뉴스</h4>
+<ul>
+<li><a href="http://v.media.daum.net/v/20160930113502019">단독  인터넷TV 음란물 시장 최강자는 KT</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930092927117">서울경제TV  KT, 나는 가수다·복면가왕 등 인기 방송프로그램 VR중계</a>  </li>
+<li><a href="http://v.media.daum.net/v/20160930103504474">KT, 국군의 날 군부대 공중전화 무료 제공</a>  </li>
+<li><a href="http://www.babytimes.co.kr/n_news/news/view.html?no=17758">KT, ‘평창동계올림픽 G-500’에 5G 서비스 선봬</a>  </li>
+</ul>
+<hr />
+<h1><a href="http://olla.ga/theme/%EB%B3%B4%EC%95%88">보안</a> 테마 총 상승률 0.44% 로 40위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/136540">윈스</a> : 0.44%</h3>
+<hr />
+<h1><a href="http://olla.ga/theme/%ED%97%AC%EC%8A%A4%EC%BC%80%EC%96%B4">헬스케어</a> 테마 총 상승률 0.40% 로 41위</h1>
+<h2>관련종목</h2>
+<h3>1위. <a href="http://olla.ga/company/005850">에스엘</a> : 0.30%</h3>
+<h3>2위. <a href="http://olla.ga/company/019210">와이지-원</a> : 0.10%</h3>
+<pre><code>위 내용은 투자판단의 참고사항이며 본 내용을 읽고 생긴 투자에 대해 본 사이트는 법적, 경제적 책임을 지지 않습니다.  </code></pre>
+<pre><code>테마주 매매에는 큰 위험이 도사리고 있습니다.  
+잘 잡으면 대박을 치지만 상투를 잡으면 크게 물릴수도 있습니다.  
+신중한 판단을 부탁드립니다.  </code></pre>
+<pre><code>게시된 정보는 비영리 사용을 전제로 하며 본문을 변경하지 않고 출처를 밝히신다면 배포 가능합니다.  </code></pre>
+	  <!-- 애드센스 이미지 광고. 반응형 -->
+	<DIV class='ads_adsense_img' style='margin:40px 0px 40px 0px;'>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- 디스플레이광고만 -->
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-8393857339019314"
+	     data-ad-slot="7474886381"
+	     data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</DIV>
+	<!-- 애드센스 이미지 광고 끝 -->	
+
+<!-- 디스커스 댓글 -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+
+var disqus_config = function () {
+    this.page.url = 'http://olla.selfhow.com/daily/2016-09-30';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '/daily/2016-09-30'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//ollaga.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>자바스크립트가 꺼져 있습니다. 댓글을 다시려면<a href="https://disqus.com/?ref_noscript">여기</a>를 클릭하세요.</noscript>
+                                    
+<!-- 소셜 공유 -->
+<div class="social-icons">			
+	<a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Folla.selfhow.com%2Fdaily%2F2016-09-30" target="_blank">
+		<svg class="icon icon-facebook" viewBox="0 0 32 32">
+			<use xlink:href="#icon-facebook"></use>
+		</svg>
+	</a>
+	<a href="https://twitter.com/share?url=http%3A%2F%2Folla.selfhow.com%2Fdaily%2F2016-09-30" target="_blank">
+		<svg class="icon icon-twitter" viewBox="0 0 32 32">
+			<use xlink:href="#icon-twitter"></use>
+		</svg>
+	</a>
+</div>
+
+<!-- 푸터 -->
+<section class="footer">
+	<div id="footer">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="copyright text-white text-center">
+				<div>
+					Copyright <a href="http://olla.ga" target="_blank" class="text-darkBrown">olla.ga</a> All right reserved<br>
+					Contact : <a href="/cdn-cgi/l/email-protection#28464944494f49684f45494144064b4745"><span class="__cf_email__" data-cfemail="a8c6c9c4c9cfc9e8cfc5c9c1c486cbc7c5">[email&#160;protected]</span></a>
+				</div>				
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</section>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83920722-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
